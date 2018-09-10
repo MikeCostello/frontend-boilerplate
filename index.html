@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="container-fluid">
+    <!-- Search -->
+    <div class="row">
+        <div class="col-sm">
+            <form class="form-inline m-2 mt-3 mb-3">
+                <div class="form-group mb-2 mr-sm-2">
+                    <label class="mr-sm-2" for="formActive">Active:</label>
+                    <select class="form-control-sm" id="formActive">
+                        <option value="---">---</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-2 mr-sm-2">
+                    <label class="mr-sm-2" for="formType">Type:</label>
+                    <select class="form-control-sm" id="formType">
+                        <option value="---">---</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-2 mr-sm-2">
+                    <label class="mr-sm-2" for="formAdvertiser">Advertiser:</label>
+                    <select class="form-control-sm" id="formAdvertiser">
+                        <option value="---">---</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-2 mr-sm-2">
+                    <label class="mr-sm-2" for="formNetworks">Networks:</label>
+                    <select class="form-control-sm" id="formNetworks">
+                        <option value="---">---</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-2 mr-sm-2">
+                    <label class="mr-sm-2" for="formSalesRep">Sales Rep:</label>
+                    <select class="form-control-sm" id="formSalesREp">
+                        <option value="---">---</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-2 mr-sm-2">
+                    <label class="mr-sm-2" for="formStart">Start:</label>
+                    <input class="form-control-sm" type="date" id="formStart">
+                </div>
+
+                <div class="form-group mb-2 mr-sm-2">
+                    <label class="mr-sm-2" for="formEnd">End:</label>
+                    <input class="form-control-sm" type="date" id="formEnd">
+                </div>
+
+                <button type="submit" class="btn-sm btn-primary mb-2 mr-sm-2">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Results -->
+    <div class="row">
+        <table class="table table-bordered table-sm">
+            <thead class="thead-dark text-center text-nowrap">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Advertiser</th>
+                <th>Network</th>
+                <th>Type</th>
+                <th>Sales Rep</th>
+                <th>Price</th>
+                <th>Imps</th>
+                <th>Clicks</th>
+                <th>Comps</th>
+                <th>% Comp</th>
+                <th>Days Left</th>
+                <th>Earnings</th>
+                <th>ECPM</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-right">102724</td>
+                <td>Offer 001 <span class="float-right text-danger font-weight-bold" style="font-size: 1.1rem;">&minus;</span></td>
+                <td>DEMO</td>
+                <td>Network A</td>
+                <td>Sales Person</td>
+                <td>YouTube Video</td>
+                <td class="text-right">0</td>
+                <td class="text-right">141</td>
+                <td class="text-right">0</td>
+                <td class="text-right">23<br>0</td>
+                <td class="text-right">N/A</td>
+                <td class="text-right">848</td>
+                <td class="text-right">$0.00</td>
+                <td class="text-right">$0.00</td>
+            </tr>
+            <tr>
+                <td><span class="float-right text-primary" style="font-size: 2rem;">&#8627;</span></td>
+                <td class="text-right" colspan="14">
+                    <table class="table table-bordered table-sm w-auto">
+                        <thead class="text-center text-nowrap">
+                        <tr class="table-primary">
+                            <th colspan="6">Campaign Info</th>
+                            <th colspan="2">Items Total</th>
+                        </tr>
+                        <tr class="table-secondary">
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Network</th>
+                            <th>Step #</th>
+                            <th>% Comp</th>
+                            <th>Days Left</th>
+                            <th>Comps</th>
+                            <th>Earnings</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-right">102725</td>
+                            <td>Offer 001</td>
+                            <td>Demo</td>
+                            <td class="text-right">1</td>
+                            <td class="text-right">N/A</td>
+                            <td class="text-right">848</td>
+                            <td class="text-right">23<br>0</td>
+                            <td class="text-right">$0.00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
